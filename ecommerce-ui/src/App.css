@@ -1,0 +1,132 @@
+h1 {
+  font-size: 1em;
+  border-bottom: 1px solid #c9cac9;
+}
+
+h1 span {
+  border-bottom: 1px solid #1d1b1b;
+}
+
+a { 
+  text-decoration: none; 
+  color: #1d1b1b;
+}
+
+img { 
+  width: 100%; 
+  height: auto; 
+}
+
+.allVacationRentals {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+#allRentals {
+  margin: 30px;
+}
+
+#cart {
+  grid-template-columns: 1fr 1fr;
+}
+
+#cart .vacationTitle, #cart .vacationHouseType, #cart .vacationLocation {
+  grid-column: 2;
+}
+
+#cart .article a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  padding-right: 30px;
+}
+
+#cart .vacationImage {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  margin-right: 3em;
+}
+
+#cart .vacationImage img {
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+}
+
+#airbnbs {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#airbnbs .article .vacationTitle, #airbnbs .article .vacationHouseType, #airbnbs .vacationLocation {
+  padding: 0 10px;
+}
+
+#airbnbs .vacationImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+#airbnbs .vacationLocation { 
+  padding-bottom: 20px; 
+}
+
+#airbnbs .vacationTitle, #airbnbs .vacationHouseType { 
+  margin-bottom: 10px; 
+}
+
+.article {
+  border: 1px solid #c9cac9;
+}
+
+.vacationLocation {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.authorImage {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.authorImage img { 
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.vacationLocation .vacationCity {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+.vacationCountry {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.5em;
+}
+
+.vacationLocation .vacationCountry {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.vacationLocation .vacationCity, .vacationLocation .vacationCountry {
+  font-size: 0.7em;
+}
+
+.article .title {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.article .vacationHouseType {
+  font-size: 1em;
+}
